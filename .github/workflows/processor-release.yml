@@ -8,6 +8,8 @@ jobs:
   release:
     name: processor release - ${{ matrix.target }}
     runs-on: ${{ matrix.runner }}
+    permissions:
+      contents: write
     strategy:
       fail-fast: false
       matrix:
